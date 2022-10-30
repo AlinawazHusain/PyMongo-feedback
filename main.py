@@ -7,8 +7,7 @@ db=client['GithubRepo']
 collection=db['mydata']
 na=input("Enter your name: ")
 em=input("Enter your email: ")
-rev=input("enter your review about this repository")
+rev=input("enter your review about this repository: ")
 
 dic={'name':na , 'email':em , 'review': rev}
 collection.insert_one(dic)
-
